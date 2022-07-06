@@ -1,11 +1,9 @@
 expression = '<<.<<..>><>><.>.>.<<.>.<.>>>><>><>>'
 
-# extrair as areias
+diamonds = 0
+
 sand = expression.count('.')
 expression = expression.delete('.')
-
-# extrair os diamentes
-diamonds = 0
 
 while expression.scan(/<>/).count > 0
   extract = expression.scan(/<>/).count
@@ -13,5 +11,4 @@ while expression.scan(/<>/).count > 0
   expression = expression.gsub(/<>/, '')
 end
 
-# quantidade de diamantes
 puts "Diamonds #{diamonds}"
