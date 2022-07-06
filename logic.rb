@@ -11,5 +11,5 @@ while expression.scan(/<>/).count > 0
   expression = expression.gsub(/<>/, '')
 end
 
-puts "<<.<<..>><>><.>.>.<<.>.<.>>>><>><>>"
-puts "Diamonds #{diamonds}"
+puts 'Nothing more to mine.'
+puts "Found diamonds: #{diamonds}"
